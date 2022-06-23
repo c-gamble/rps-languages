@@ -1,0 +1,25 @@
+#navbar {
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+  }
+  #fifth {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+  }
+  #fifth > button {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-radius: 4px;
+    border: 2px solid #545454;
+    background-color: transparent;
+    color: #545454;
+    transition: all 400ms;
+  }
+  #fifth > button:hover {
+    border-color: #B8C4BB;
+    color: #006e90;
+  }

@@ -1,0 +1,19 @@
+/*
+honeydew: E8F7EE
+ash gray: B8C4BB
+rose gold: F7CAC9
+olive drab: 3C362A
+periwinkle: C9D6EA
+*/
+body {
+  font-family: "Roboto";
+  background: #28282B;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#padder {
+  height: 9vh
+}
