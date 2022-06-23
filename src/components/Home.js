@@ -3,6 +3,27 @@ import { React } from "react"
 
 const Home = () => {
     return (
+      <>
+        <div id = "header">
+          <div id = "t1">
+            <div id = "h-content">
+              THE
+            </div>
+          </div>
+          <div id = "t2">        
+            <div id = "h-content">
+              LANG
+            </div>
+          </div>
+          <div id = "t3">
+            <div id = "h-content">
+              GANG
+            </div>
+          </div>
+        </div>
+
+        <div id = "desc">RPS Online Language Compository</div>
+        <div id = "padder"></div>
         <div id = "content">
           <div id = "flags-cont">
             <div id = "flags">
@@ -39,6 +60,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </>
     );
 }
 
