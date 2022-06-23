@@ -1,7 +1,7 @@
 import '../styles/Navbar.css';
 import React, { useCallback } from "react";
 import { useNavigate } from 'react-router-dom';
-const Navbar = () => {
+export default function Navbar() {
   const navigate = useNavigate();
   const handleHome = useCallback(() => navigate('/', {replace: true}), [navigate]);
   const handleLanguages = useCallback(() => navigate('/languages', {replace: true}), [navigate]);
@@ -19,5 +19,3 @@ const Navbar = () => {
         </div>
     );
 }
-
-export default Navbar;

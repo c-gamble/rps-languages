@@ -1,6 +1,7 @@
-const About = () => {
+import '../styles/About.css'
+
+export default function About() {
     return (
         <div id = "About"></div>
     );
 }
-export default About;

@@ -1,7 +1,7 @@
 import '../styles/Home.css'
 import { React } from "react"
 
-const Home = () => {
+export default function Home() {
     return (
       <>
         <div id = "header">
@@ -22,14 +22,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div id = "desc">RPS Online Language Compository</div>
-        <div id = "padder"></div>
         <div id = "content">
           <div id = "flags-cont">
             <div id = "flags">
-              <div id = "flag"><div><img src = {require("../images/french.png")} alt = "French Flag"/></div>French / Français</div>
-              <div id = "flag"><div><img src = {require("../images/german.png")} alt = "German Flag"/></div>German / Deutsch</div>
-              <div id = "flag"><div><img src = {require("../images/latin.png")} alt = "Latin Flag"/></div>Latin / Latin</div>
+              <div id = "flag"><div><img src = {require("../images/french.png")} alt = "French Flag"/></div><div>French /<span id = "span">&nbsp;Français</span></div></div>
+              <div id = "flag"><div><img src = {require("../images/german.png")} alt = "German Flag"/></div><div>German /<span id = "span">&nbsp;Deutsch</span></div></div>
+              <div id = "flag"><div><img src = {require("../images/latin.png")} alt = "Latin Flag"/></div><div>Latin /<span id = "span">&nbsp;Latin</span></div></div>
             </div>
           </div>
 
@@ -63,5 +61,3 @@ const Home = () => {
       </>
     );
 }
-
-export default Home;
