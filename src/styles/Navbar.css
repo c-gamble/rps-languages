@@ -3,12 +3,12 @@
     justify-content: center;
     height: 7vh;
   }
-  #fifth {
-    width: 20vw;
+  #fourth {
+    width: 25vw;
     display: flex;
     justify-content: center;
   }
-  #fifth > button {
+  #fourth > button {
     margin-top: 1vw;
     margin-bottom: 1vw;
     font-family: "Roboto";
@@ -19,7 +19,8 @@
     color: #545454;
     transition: all 400ms;
   }
-  #fifth > button:hover {
+  #fourth > button:hover {
     border-color: #B8C4BB;
     color: #006e90;
+    transform: scale(1.1);
   }

@@ -1,0 +1,119 @@
+#main-label-cont {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#main-label {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+#contact {
+    color: #B8C4BB;
+    transition: all 400ms ease;
+    background: transparent !important;
+}
+#us {
+    color: #B8C4BB;
+    transition: all 400ms ease;
+    background: transparent !important;
+}
+#contact:hover {
+    color: #006e90;
+}
+#us:hover {
+    color: #006e90;
+}
+#form-main {
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#form-container {
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+}
+#form {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#label {
+    color: #006e90;
+    margin-bottom: .75vh;
+    font-size: 26px;
+}
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #28282B inset !important;
+    box-shadow: 0 0 0 30px #28282B inset !important;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: #B8C4BB !important;
+} */
+input, textarea {
+    color: #B8C4BB;
+}
+input::placeholder, textarea::placeholder{
+    font-style: italic;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+textarea:focus::placeholder {
+    color: transparent;
+}
+#short-input {
+    text-align: center;
+    border: none;
+    outline: none;
+    margin-bottom: 6vh;
+}
+#short-input:focus {
+    border: none;
+    outline: none;
+}
+#long-input {
+    text-align: center;
+    border: none;
+    outline: none;
+    resize: none;
+    height: auto !important;
+    margin-bottom: 2vh;
+    overflow-y: hidden;
+}
+#long-input:focus {
+    border: none;
+    outline: none;
+}
+#submit-cont {
+    width: 100%;
+    align-items: center;
+}
+#submit {
+    font-family: "Roboto";
+    width: auto;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 2px solid #545454;
+    background-color: transparent;
+    color: #545454;
+    transition: all 400ms;
+}
+#submit:hover {
+    border-color: #B8C4BB;
+    color: #006e90;
+    transform: scale(1.05);
+}

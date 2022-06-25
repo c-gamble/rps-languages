@@ -50,7 +50,7 @@
 #flags {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 #flag {
   display: flex;
@@ -58,7 +58,6 @@
   justify-content: center;
   text-align: center;
   color: #B8C4BB;
-  margin-bottom: 2vh;
 }
 #flag > div {
   display: flex;
@@ -66,14 +65,11 @@
   transition: all 400ms ease;
 }
 #flag > div > span {
-  color: #006e90;
+  color: #B8C4BB;
   transition: all 400ms ease;
 }
-#flag > div:hover {
+#flag > div > span:hover {
   color: #006e90;
-}
-#flag > div:hover #span {
-  color: #B8C4BB;
 }
 #selectors {
   display: flex;
@@ -110,4 +106,5 @@
 #level > button:hover {
   border-color: #B8C4BB;
   color: #006e90;
+  transform: scale(1.1);
 }
