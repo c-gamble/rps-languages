@@ -14,13 +14,13 @@
     font-family: "Roboto";
     font-size: 18px;
     border-radius: 4px;
-    border: 2px solid #545454;
+    border: 2px solid #71797E;
     background-color: transparent;
-    color: #545454;
+    color: #71797E;
     transition: all 400ms;
   }
   #fourth > button:hover {
-    border-color: #B8C4BB;
-    color: #006e90;
+    border-color: #000;
+    color: #FF272A;
     transform: scale(1.1);
   }
