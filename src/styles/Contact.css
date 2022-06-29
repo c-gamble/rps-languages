@@ -10,20 +10,20 @@
     font-size: 50px;
 }
 #contact {
-    color: #000;
+    color: #131200;
     transition: all 400ms ease;
     background: transparent !important;
 }
 #us {
-    color: #000;
+    color: #131200;
     transition: all 400ms ease;
     background: transparent !important;
 }
 #contact:hover {
-    color: #FF272A;
+    color: #9BC1BC;
 }
 #us:hover {
-    color: #FF272A;
+    color: #9BC1BC;
 }
 #form-main {
     height: 93vh;
@@ -49,7 +49,7 @@
     align-items: center;
 }
 #label {
-    color: #FF272A;
+    color: #9BC1BC;
     margin-bottom: .75vh;
     font-size: 26px;
 }
@@ -61,10 +61,10 @@ input:-webkit-autofill:active{
     box-shadow: 0 0 0 30px #28282B inset !important;
 }
 input:-webkit-autofill{
-    -webkit-text-fill-color: #000 !important;
+    -webkit-text-fill-color: #131200 !important;
 } */
 input, textarea {
-    color: #000;
+    color: #131200;
 }
 textarea {
     text-align: left !important;
@@ -117,7 +117,7 @@ textarea:focus::placeholder {
     transition: all 400ms;
 }
 #submit:hover {
-    border-color: #000;
-    color: #FF272A;
+    border-color: #131200;
+    color: #9BC1BC;
     transform: scale(1.05);
 }

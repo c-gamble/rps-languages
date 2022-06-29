@@ -5,8 +5,12 @@ rose gold: F7CAC9
 olive drab: 3C362A
 periwinkle: C9D6EA
 */
+@import url('https://fonts.googleapis.com/css?family=Manrope');
 * {
-  font-family: "Roboto";
+  font-family: "Manrope", monospace;
   background: #fff;
+
+
+
 }
 

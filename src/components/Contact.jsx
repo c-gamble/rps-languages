@@ -25,18 +25,18 @@ export default function Contact() {
                 <form id = "form" ref={form} onSubmit={sendEmail}>
                     <div id = "short" style = {{marginTop: "0vh"}}>
                         <label id = "label">Name</label>
-                        <input required = "true" autoComplete = "off" id = "short-input" type="text" name="user_name" placeholder='click to start typing'/>
+                        <input required = {true} autoComplete = "off" id = "short-input" type="text" name="user_name" placeholder='click to start typing'/>
                     </div>
                     <div id = "short">
                         <label id = "label">Email</label>
-                        <input required = "true" autoComplete = "off" id = "short-input" type="email" name="user_email" placeholder='click to start typing'/>
+                        <input required = {true} autoComplete = "off" id = "short-input" type="email" name="user_email" placeholder='click to start typing'/>
                     </div>
                     <div id = "long">
                         <label id = "label">Message</label>
-                        <textarea id = "long-input" resizable = "false" name="message" placeholder='click to start typing' />
+                        <textarea required = {true} autoComplete = "off" id = "long-input" resizable = "false" name="message" placeholder='click to start typing' />
                     </div>
                     <div id = "submit-cont">
-                        <input required = "true" autoComplete = "off" id = "submit" type="submit" value="Send" />
+                        <input id = "submit" type="submit" value="Send" />
                     </div>
                 </form>
             </div>

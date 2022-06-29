@@ -1,0 +1,30 @@
+<div id = "content">
+
+
+          <div id = "selectors">
+            <div id = "selector">
+              <ul id = "levels">
+                <li id = "level"><button onClick = {handleFrenchI}>Français Un</button></li>
+                <li id = "level"><button onClick = {handleFrenchII}>Français Deux</button></li>
+                <li id = "level"><button onClick = {handleFrenchIII}>Français Trois</button></li>
+                <li id = "level"><button onClick = {handleFrenchIV}>Français Quarte</button></li>
+              </ul>
+            </div>
+            <div id = "selector">
+              <ul id = "levels">
+                <li id = "level"><button onClick = {handleGermanI}>Deutsch Ein</button></li>
+                <li id = "level"><button onClick = {handleGermanII}>Deutsch Zwei</button></li>
+                <li id = "level"><button onClick = {handleGermanIII}>Deutsch Drei</button></li>
+                <li id = "level"><button onClick = {handleGermanIV}>Deutsch Vier</button></li>
+              </ul>
+            </div>
+            <div id = "selector">
+              <ul id = "levels">
+                <li id = "level"><button onClick = {handleLatinI}>Latin Unus</button></li>
+                <li id = "level"><button onClick = {handleLatinII}>Latin Duo</button></li>
+                <li id = "level"><button onClick = {handleLatinIII}>Latin Tres</button></li>
+                <li id = "level"><button onClick = {handleLatinIV}>Latin Quattuor</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
