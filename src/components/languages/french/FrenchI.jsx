@@ -1,8 +1,10 @@
-import '../../../styles/languages/french/FrenchI.css'
+import '../../../styles/languages/french/FrenchI.css';
+import { motion } from 'framer-motion';
 
 export default function FrenchI() {
     return (
-        <div>this is FrenchI</div>
+        <motion.div>
+        </motion.div>
     );
 
 }

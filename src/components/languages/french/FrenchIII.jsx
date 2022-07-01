@@ -1,8 +1,10 @@
 import '../../../styles/languages/french/FrenchIII.css'
+import { motion } from 'framer-motion';
 
 export default function FrenchIII() {
     return (
-        <div>this is FrenchIII</div>
+        <motion.div>
+        </motion.div>
     );
 
 }

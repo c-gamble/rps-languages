@@ -1,8 +1,10 @@
 import '../../../styles/languages/latin/LatinII.css'
+import { motion } from 'framer-motion';
 
 export default function LatinII() {
     return (
-        <div>this is LatinII</div>
+        <motion.div>
+        </motion.div>
     );
 
 }

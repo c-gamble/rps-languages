@@ -19,12 +19,6 @@
     transition: all 400ms ease;
     background: transparent !important;
 }
-#contact:hover {
-    color: #9BC1BC;
-}
-#us:hover {
-    color: #9BC1BC;
-}
 #form-main {
     height: 93vh;
     display: flex;
@@ -49,20 +43,11 @@
     align-items: center;
 }
 #label {
-    color: #9BC1BC;
+    color: red;
     margin-bottom: .75vh;
     font-size: 26px;
 }
-/* input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px #28282B inset !important;
-    box-shadow: 0 0 0 30px #28282B inset !important;
-}
-input:-webkit-autofill{
-    -webkit-text-fill-color: #131200 !important;
-} */
+
 input, textarea {
     color: #131200;
 }
@@ -79,17 +64,17 @@ input:focus::placeholder {
 textarea:focus::placeholder {
     color: transparent;
 }
-#short-input {
+.short-input {
     text-align: center;
     border: none;
     outline: none;
     margin-bottom: 6vh;
 }
-#short-input:focus {
+.short-input:focus {
     border: none;
     outline: none;
 }
-#long-input {
+.long-input {
     text-align: center;
     border: none;
     outline: none;
@@ -98,7 +83,7 @@ textarea:focus::placeholder {
     margin-bottom: 2vh;
     overflow-y: hidden;
 }
-#long-input:focus {
+.long-input:focus {
     border: none;
     outline: none;
 }
@@ -110,14 +95,11 @@ textarea:focus::placeholder {
     font-family: "Roboto";
     width: auto;
     font-size: 18px;
-    border-radius: 4px;
-    border: 2px solid #71797E;
-    background-color: transparent;
+    border: none;
     color: #71797E;
-    transition: all 400ms;
+    transition: all 250ms;
 }
 #submit:hover {
-    border-color: #131200;
-    color: #9BC1BC;
-    transform: scale(1.05);
+    color: red;
+    transform: scale(1.07);
 }

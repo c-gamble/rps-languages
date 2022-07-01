@@ -1,9 +1,10 @@
+import { motion } from 'framer-motion'
 import '../styles/About.css'
 
 export default function About() {
     return (
-        <div id = "About">
-        
-        </div>
+        <motion.div>
+
+        </motion.div>
     );
 }

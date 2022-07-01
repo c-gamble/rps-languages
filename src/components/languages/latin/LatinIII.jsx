@@ -1,8 +1,10 @@
 import '../../../styles/languages/latin/LatinIII.css'
+import { motion } from 'framer-motion';
 
 export default function LatinIII() {
     return (
-        <div>this is LatinIII</div>
+        <motion.div>
+        </motion.div>
     );
 
 }

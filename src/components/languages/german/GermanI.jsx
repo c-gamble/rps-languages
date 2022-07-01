@@ -1,8 +1,10 @@
 import '../../../styles/languages/german/GermanI.css'
+import { motion } from 'framer-motion';
 
 export default function GermanI() {
     return (
-        <div>this is GermanI</div>
+        <motion.div>
+        </motion.div>
     );
 
 }

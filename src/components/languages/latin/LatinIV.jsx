@@ -1,8 +1,10 @@
 import '../../../styles/languages/latin/LatinIV.css'
+import { motion } from 'framer-motion';
 
 export default function LatinIV() {
     return (
-        <div>this is LatinIV</div>
+        <motion.div>
+        </motion.div>
     );
 
 }

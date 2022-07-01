@@ -1,24 +1,13 @@
-import '../styles/Home.css'
+import '../styles/Home.css';
 import '../styles/Navbar.css';
-import React, { useCallback } from "react";
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+
+import FrenchSelect from './selectors/FrenchSelect';
+import GermanSelect from './selectors/GermanSelect';
+import LatinSelect from './selectors/LatinSelect';
+
+
 export default function Home() {
-  const navigate = useNavigate();
-  //french
-  const handleFrenchI = useCallback(() => navigate('/frenchi', {replace: true}, [navigate]));
-  const handleFrenchII = useCallback(() => navigate('/frenchii', {replace: true}, [navigate]));
-  const handleFrenchIII = useCallback(() => navigate('/frenchiii', {replace: true}, [navigate]));
-  const handleFrenchIV = useCallback(() => navigate('/frenchiv', {replace: true}, [navigate]));
-  //german
-  const handleGermanI = useCallback(() => navigate('/germani', {replace: true}, [navigate]));
-  const handleGermanII = useCallback(() => navigate('/germanii', {replace: true}, [navigate]));
-  const handleGermanIII = useCallback(() => navigate('/germaniii', {replace: true}, [navigate]));
-  const handleGermanIV = useCallback(() => navigate('/germaniv', {replace: true}, [navigate]));
-  //latin
-  const handleLatinI = useCallback(() => navigate('latini', {replace: true}, [navigate]));
-  const handleLatinII = useCallback(() => navigate('latinii', {replace: true}, [navigate]));
-  const handleLatinIII = useCallback(() => navigate('latiniii', {replace: true}, [navigate]));
-  const handleLatinIV = useCallback(() => navigate('latiniv', {replace: true}, [navigate]));
     return (
       <>
         <div id = "header">
@@ -41,11 +30,11 @@ export default function Home() {
 
         <div id = "flags-cont">
             <div id = "flags">
-              <div id = "flag"><div><button><img src = {require("../images/french.png")} alt = "French Flag" onClick = {console.log("working")}/></button></div><div><span id = "span">&nbsp;Français</span></div></div>
-              <div id = "flag"><div><button><img src = {require("../images/german.png")} alt = "German Flag" onClick = {console.log("working")}/></button></div><div><span id = "span">&nbsp;Deutsch</span></div></div>
-              <div id = "flag"><div><button><img src = {require("../images/latin.png")} alt = "Latin Flag" onClick = {console.log("working")}/></button></div><div><span id = "span">&nbsp;Latin</span></div></div>
+              <FrenchSelect />
+              <GermanSelect />
+              <LatinSelect />
             </div>
-          </div>
+        </div>
       </>
     );
 }
