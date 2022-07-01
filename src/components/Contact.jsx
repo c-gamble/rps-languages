@@ -21,13 +21,11 @@ export default function Contact() {
             console.log(error.text);
         }).then(alert("Your message was received!"));
     };
-    const [isSubmittable, setIsSubmittable] = useState(false);
-    const handleFull = () => {
-        setIsSubmittable(true);
-    }
-    const handleChange = (e) => {
-        return null
-    }
+
+    const [isName, setIsName] = useState(false);
+    const [isEmail, setIsEmail] = useState(false);
+    const [isMsg, setIsMsg] = useState(false);
+
     return (
         <motion.div>
             <div id = "form-main">
@@ -40,18 +38,17 @@ export default function Contact() {
                     <form id = "form" ref={form} onSubmit={sendEmail}>
                         <div id = "short" style = {{marginTop: "0vh"}}>
                             <label id = "label">Name</label>
-                            <input required = {true} autoComplete = "off" id = "name" className = "short-input" type="text" name="user_name" placeholder='click to start typing'/>
+                            <input required = {true} autoComplete = "off" onChange = {() => setIsName(true)}id = "name" className = "short-input" type="text" name="user_name" placeholder='click to start typing'/>
                         </div>
                         <div id = "short">
                             <label id = "label">Email</label>
-                            <input required = {true} autoComplete = "off" id = "email" className = "short-input" type="email" name="user_email" placeholder='click to start typing'/>
+                            <input required = {true} autoComplete = "off" onChange = {() => setIsEmail(true)}id = "email" className = "short-input" type="email" name="user_email" placeholder='click to start typing'/>
                         </div>
                         <div id = "long">
                             <label id = "label">Message</label>
-                            <textarea required = {true} autoComplete = "off" id = "msg" className = "long-input" resizable = "false" name="message" placeholder='click to start typing' />
+                            <textarea required = {true} autoComplete = "off" onChange = {() => setIsMsg(true)} id = "msg" className = "long-input" resizable = "false" name="message" placeholder='click to start typing' />
                         </div>
-                        <Submit />
-                        {/* { isSubmittable ? <Submit /> : <></>} */}
+                        {(isName && isEmail && isMsg) ? <Submit /> : <></>}
                     </form>
                 </div>
             </div>

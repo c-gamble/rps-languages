@@ -40,7 +40,7 @@ export default function GermanSelect() {
   const DisplayedG = () => {
     return (
       <div id = "flag">
-        <div><button><motion.img whileTap = {{scale: 0.95}} id = "img" src = {require("../../images/german.png")} alt = "German Flag" onClick = {() => setIsToggledG(!isToggledG)}/></button></div>
+        <div><button><img draggable = {false} id = "img" src = {require("../../images/german.png")} alt = "German Flag" onClick = {() => setIsToggledG(!isToggledG)}/></button></div>
         <SelectorG />
       </div>
     )
@@ -48,7 +48,7 @@ export default function GermanSelect() {
   const HiddenG = () => {
     return (
       <div id = "flag">
-        <div><button><motion.img whileTap = {{scale: 0.95}} id = "img" src = {require("../../images/german.png")} alt = "German Flag" onClick = {() => setIsToggledG(!isToggledG)}/></button></div>
+        <div><button><img draggable = {false} id = "img" src = {require("../../images/german.png")} alt = "German Flag" onClick = {() => setIsToggledG(!isToggledG)}/></button></div>
         <PadderG />
       </div>
     )

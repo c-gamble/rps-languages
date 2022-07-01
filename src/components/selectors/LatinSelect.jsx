@@ -40,7 +40,7 @@ export default function LatinSelect() {
   const DisplayedL = () => {
     return (
       <div id = "flag">
-        <div><button><motion.img whileTap = {{scale: 0.95}} id = "img" src = {require("../../images/latin.png")} alt = "Latin Flag" onClick = {() => setIsToggledL(!isToggledL)}/></button></div>
+        <div><button><img draggable = {false} id = "img" src = {require("../../images/latin.png")} alt = "Latin Flag" onClick = {() => setIsToggledL(!isToggledL)}/></button></div>
         <SelectorL />
       </div>
     )
@@ -48,7 +48,7 @@ export default function LatinSelect() {
   const HiddenL = () => {
     return (
       <div id = "flag">
-        <div><button><motion.img whileTap = {{scale: 0.95}} id = "img" src = {require("../../images/latin.png")} alt = "Latin Flag" onClick = {() => setIsToggledL(!isToggledL)}/></button></div>
+        <div><button><img draggable = {false} id = "img" src = {require("../../images/latin.png")} alt = "Latin Flag" onClick = {() => setIsToggledL(!isToggledL)}/></button></div>
         <PadderL />
       </div>
     )

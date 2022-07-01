@@ -40,7 +40,7 @@ export default function FrenchSelect() {
   const DisplayedF = () => {
     return (
       <div id = "flag">
-        <div><button><motion.img whileTap = {{scale: 0.95}} id = "img" src = {require("../../images/french.png")} alt = "French Flag" onClick = {() => setIsToggledF(!isToggledF)}/></button></div>
+        <div><button><img draggable = {false} id = "img" src = {require("../../images/french.png")} alt = "French Flag" onClick = {() => setIsToggledF(!isToggledF)}/></button></div>
         <SelectorF />
       </div>
     )
@@ -48,7 +48,7 @@ export default function FrenchSelect() {
   const HiddenF = () => {
     return (
       <div id = "flag">
-        <div><button><motion.img whileTap = {{scale: 0.95}} id = "img" src = {require("../../images/french.png")} alt = "French Flag" onClick = {() => setIsToggledF(!isToggledF)}/></button></div>
+        <div><button><img draggable = {false} id = "img" src = {require("../../images/french.png")} alt = "French Flag" onClick = {() => setIsToggledF(!isToggledF)}/></button></div>
         <PadderF />
       </div>
     )
