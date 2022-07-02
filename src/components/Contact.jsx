@@ -39,14 +39,17 @@ export default function Contact() {
                         <div id = "short" style = {{marginTop: "0vh"}}>
                             <label id = "label">Name</label>
                             <input required = {true} autoComplete = "off" onChange = {() => setIsName(true)}id = "name" className = "short-input" type="text" name="user_name" placeholder='click to start typing'/>
+                            {/* {isName ? <input required = {true} autoComplete = "off" id = "isName" type="text" name="user_name" placeholder='click to start typing'/>:<input required = {true} autoComplete = "off" onChange = {() => setIsName(true)}id = "name" className = "short-input" type="text" name="user_name" placeholder='click to start typing'/>} */}
                         </div>
                         <div id = "short">
                             <label id = "label">Email</label>
                             <input required = {true} autoComplete = "off" onChange = {() => setIsEmail(true)}id = "email" className = "short-input" type="email" name="user_email" placeholder='click to start typing'/>
+                            {/* {isEmail ? <input required = {true} autoComplete = "off" id = "isEmail" type="email" name="user_email" placeholder='click to start typing'/>:<input required = {true} autoComplete = "off" onChange = {() => setIsEmail(true)}id = "email" className = "short-input" type="email" name="user_email" placeholder='click to start typing'/>} */}
                         </div>
                         <div id = "long">
                             <label id = "label">Message</label>
                             <textarea required = {true} autoComplete = "off" onChange = {() => setIsMsg(true)} id = "msg" className = "long-input" resizable = "false" name="message" placeholder='click to start typing' />
+                            {/* {isMsg ? <textarea required = {true} autoComplete = "off" id = "isMsg" resizable = "false" name="message" placeholder='click to start typing' />:<textarea required = {true} autoComplete = "off" onChange = {() => setIsMsg(true)} id = "msg" className = "long-input" resizable = "false" name="message" placeholder='click to start typing' />} */}
                         </div>
                         {(isName && isEmail && isMsg) ? <Submit /> : <></>}
                     </form>
