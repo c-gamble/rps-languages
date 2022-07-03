@@ -75,13 +75,7 @@
 }
 #flag > div > button {
   border: none;
-}
-#flag > div > span {
-  color: #131200;
-  transition: all 400ms ease;
-}
-#flag > div > span:hover {
-  color: red;
+  outline: none;
 }
 #img {
   transition: all 250ms;

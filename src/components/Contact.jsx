@@ -3,10 +3,19 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 
+const subButton = {
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: 0.05
+        }
+    },
+    hidden: {opacity: 0}
+}
 const Submit = () => {
     return (
         <div id = "submit-cont">
-            <input id = "submit" type="submit" value="Send" />
+            <motion.input initial = "hidden" animate = "visible" variants = {subButton} id = "submit" type="submit" value="Send" />
         </div>
     );
 }

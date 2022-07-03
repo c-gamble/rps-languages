@@ -79,7 +79,7 @@ textarea:focus::placeholder {
 .short-input:focus {
     outline: none;
     width: 150%;
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid rgba(113,121,126,1);
 }
 /* #isName, #isEmail {
@@ -95,7 +95,7 @@ textarea:focus::placeholder {
 }
 #isName:focus, #isEmail:focus {
     border: 1px solid rgba(113,121,126,1);
-    border-radius: 4px;
+    border-radius: 6px;
 } */
 .long-input {
     width: 120%;
@@ -112,7 +112,7 @@ textarea:focus::placeholder {
 .long-input:focus {
     outline: none;
     width: 150%;
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid rgba(113,121,126,1);
 }
 /* #isMsg {
@@ -128,7 +128,7 @@ textarea:focus::placeholder {
     transition: all 250ms;
 }
 #isMsg:focus {
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid rgba(113,121,126,1);
 } */
 #submit-cont {
@@ -140,17 +140,19 @@ textarea:focus::placeholder {
     justify-content: center;
 }
 #submit {
-    width: 50% !important;
+    width: 40% !important;
     width: auto;
     font-size: 18px;
     border-radius: 0px;
-    border: 1px solid rgba(113,121,126,0);
+    border: none;
+    background: rgba(255,0,0,0);
     color: #131200;
     transition: all 250ms;
 }
 #submit:hover {
-    border-radius: 4px;
-    border: 1px solid rgba(113,121,126,1);
-    width: 75% !important;
-    color: red;
+    border-radius: 6px;
+    border: none;
+    background: rgba(255,0,0,1);
+    width: 65% !important;
+    color: white;
 }
