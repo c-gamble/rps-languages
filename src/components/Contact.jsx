@@ -7,7 +7,7 @@ const subButton = {
     visible: {
         opacity: 1,
         transition: {
-            delay: 0.05
+            delay: 0.02
         }
     },
     hidden: {opacity: 0}
